@@ -18,7 +18,7 @@ public class BaseModel {
 	
 	@CreationTimestamp
 	@Column(nullable = false , updatable = false)
-	private LocalDateTime createdDate;
+	private Date createdDate;
 	
 	private Integer updatedBy;
 	
@@ -55,12 +55,12 @@ public class BaseModel {
 		this.createdBy = createdBy;
 	}
 
-	public LocalDateTime getCreatedDate() {
+	public Date getCreatedDate() {
 		return createdDate;
 	}
 
-	public void setCreatedDate(LocalDateTime createdDate) {
-		this.createdDate = createdDate;
+	public void setCreatedDate(Date date) {
+		this.createdDate = date;
 	}
 
 	public Date getUpdatedDate() {
