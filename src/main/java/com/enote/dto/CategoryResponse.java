@@ -7,6 +7,11 @@ public class CategoryResponse {
 	private String description;
 
 
+	public CategoryResponse() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
 	public Integer getId() {
 		return id;
 	}

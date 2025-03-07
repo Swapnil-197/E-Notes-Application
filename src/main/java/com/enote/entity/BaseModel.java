@@ -1,6 +1,5 @@
 package com.enote.entity;
 
-import java.time.LocalDateTime;
 import java.util.Date;
 
 import org.hibernate.annotations.CreationTimestamp;
@@ -8,6 +7,8 @@ import org.hibernate.annotations.UpdateTimestamp;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.MappedSuperclass;
+
+// This is common functionality 
 
 @MappedSuperclass
 public class BaseModel {
@@ -17,7 +18,7 @@ public class BaseModel {
 	private Integer createdBy;
 	
 	@CreationTimestamp
-	@Column(nullable = false , updatable = false)
+	@Column(nullable = false , updatable = false) 
 	private Date createdDate;
 	
 	private Integer updatedBy;

@@ -14,6 +14,19 @@ public class CategoryDto {
 	private Integer updatedBy;
 	private Date updatedDate;
 	
+	public CategoryDto(Integer id, String name, String description, Boolean isActive, Integer createdBy,
+			LocalDateTime createdDate, Integer updatedBy, Date updatedDate) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.description = description;
+		this.isActive = isActive;
+		this.createdBy = createdBy;
+		this.createdDate = createdDate;
+		this.updatedBy = updatedBy;
+		this.updatedDate = updatedDate;
+	}
+
 	public CategoryDto() {
 		super();
 	}
